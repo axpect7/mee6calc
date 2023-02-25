@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Mee6 Calculator</title>
+    <script type="text/javascript" src="script.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <div class="wrapper">
+        <header class="titles">
+            <h1 class="title generic-font"><a>A </a><a class="mee6-link" href="https://mee6.xyz">Mee6</a> Level Calculator</h1>
+            <h2 class="sub-title generic-font">Calculate the messages you need to send to reach the specified level in mee6.</h2>
+            <h2 class="sub-title generic-font"><b>Use !rank to find your current level.</b></h2>
+        </header>
+
+        <div class="input-field1">
+            <input type="number" class="xp minxp generic-font" id="minxp" placeholder="Minimum xp(default = 15)" value = "15">
+          <input type="number" class="xp maxxp generic-font" id="maxxp" placeholder="Maximum xp(default = 25)" value = "25">
+      </div>
+          <div class="input-field2">
+            <input type="number" class="input-box generic-font" id="current-lvl" placeholder="Current Level">
+            <input type="number" class="input-box generic-font" id="desired-level" placeholder="Desired Level">
+            <a class="button-calculate generic-font" onclick="mee6calculator()" href="#result">CALCULATE</a>
+        </div>
+
+        <div class="results" id="result">
+            <div class="result-main">
+              <br>
+                <h2 class="result-title generic-font">You need to send <span id="result-average">_</span> more messages</h2>
+                <span class="result-sub-title generic-font"> to reach that level.</span>
+              <br>
+                <span class="result-xp-left generic-font">You need <span id="result-xp-needed">_</span> more XP</span>
+                <br>
+                <span class="generic-font"><strong>NOTE:</strong> You can only gain XP once for every minute.</span>
+            </div>
+
+            <div class="result-max-min-messages">
+                <span>If you're lucky, you only need to send <span id="result-minimum-messages-requirement">_</span> messages to level up!</span>
+                <span>If you're unlucky, you need to write a whooping <span id="result-maximum-messages-requirement">_</span> messages.</span>
+            </div>
+        </div>
+
+        <div class="disclaimer">
+            This site is not affiliated with <a href="https://mee6.xyz/">mee6.xyz</a><br>
+            View the source-code on <a href="https://github.com/axpect/mee6calc">GitHub</a><br>
+            Licensed under the <a href="https://github.com/axpect/mee6calc/blob/master/LICENSE">MIT License</a>
+        </div>
+    </div>
+
+</body>
+</html>
