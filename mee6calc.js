@@ -22,7 +22,7 @@ function mee6calculator()
 
     //Display information to user
     document.getElementById("result-average").innerHTML = avgmsg;
-    document.getElementById("result-xp-needed").innerHTML = desiredxp;
+    document.getElementById("result-xp-needed").innerHTML = totaldesiredxp;
     document.getElementById("result-minimum-messages-requirement").innerHTML = minmsg;
     document.getElementById("result-maximum-messages-requirement").innerHTML = maxmsg;
   
