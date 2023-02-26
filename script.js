@@ -9,7 +9,7 @@ function mee6calculator()
 
     //Magical math functions
     
-    var currentxp = 5/6 * currentlvl * (2 * currentlvl * currentlvl + 27 * currentlvl + 91) + current_xp;
+    var currentxp = (5/6 * currentlvl * (2 * currentlvl * currentlvl + 27 * currentlvl + 91)) + current_xp;
     var desiredxp = 5/6 * desiredlvl * (2 * desiredlvl * desiredlvl + 27 * desiredlvl + 91) - currentxp;
 
     //Minimum, average, and maximum messages needed to send in order to reach specified level
